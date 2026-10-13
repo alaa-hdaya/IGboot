@@ -1,0 +1,77 @@
+{
+  "name": "GostProcess IG: Error Notifier",
+  "nodes": [
+    {
+      "id": "3cd21b57-7539-de8a-f85f-05f6e92c8559",
+      "name": "Error Trigger",
+      "type": "n8n-nodes-base.errorTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "parameters": {}
+    },
+    {
+      "id": "88ae66b6-c52d-8cbc-67ba-e1a8007ae673",
+      "name": "Format Error",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        220,
+        0
+      ],
+      "parameters": {
+        "jsCode": "// Formats any unexpected workflow error for the team.\n// Set TEAM_EMAIL below (same address as in the main workflow's Config node).\nconst TEAM_EMAIL = 'PASTE_TEAM_EMAIL';\nconst data = $input.first().json || {};\nconst exec = data.execution || {};\nconst wf = data.workflow || {};\nconst err = exec.error || {};\nreturn [{\n  json: {\n    to: TEAM_EMAIL,\n    subject: `[GostProcess IG] Workflow error in ${wf.name || 'workflow'}`,\n    body: [\n      `Workflow: ${wf.name || '-'}`,\n      `Failed node: ${exec.lastNodeExecuted || '-'}`,\n      `Error: ${err.message || '-'}`,\n      `Execution: ${exec.url || exec.id || '-'}`,\n      '',\n      'See docs/03-operations.md > Troubleshooting.',\n    ].join('\\n'),\n  },\n}];\n"
+      }
+    },
+    {
+      "id": "d8f3432c-fec0-42f9-bf89-29e13652e8c6",
+      "name": "Email Team",
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [
+        440,
+        0
+      ],
+      "parameters": {
+        "sendTo": "={{ $json.to }}",
+        "subject": "={{ $json.subject }}",
+        "emailType": "text",
+        "message": "={{ $json.body }}",
+        "options": {
+          "appendAttribution": false
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Error Trigger": {
+      "main": [
+        [
+          {
+            "node": "Format Error",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Format Error": {
+      "main": [
+        [
+          {
+            "node": "Email Team",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "pinData": {},
+  "active": false
+}

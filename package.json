@@ -1,0 +1,13 @@
+{
+  "name": "gostprocess-instagram-dm-assistant",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "n8n workflow + knowledge base for the GostProcess Instagram DM assistant",
+  "scripts": {
+    "build": "node n8n/build.mjs",
+    "test": "node n8n/build.mjs && node --test tests/run-tests.mjs",
+    "ai-preview": "node tests/ai-preview.mjs"
+  },
+  "engines": { "node": ">=20" }
+}

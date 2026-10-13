@@ -1,0 +1,18 @@
+section,content,enabled
+about,"GostProcess is an AI automation agency. We help businesses automate repetitive tasks, improve customer communication, capture leads, and reduce manual work using AI and workflow automation.",TRUE
+services_overview,Our services: AI automation for business workflows; n8n workflow automation; WhatsApp Business automation; Instagram DM automation; AI customer support and virtual receptionists; lead capture and qualification; appointment and booking workflows; e-commerce automation; payment reminders and follow-up systems.,TRUE
+n8n_workflows,"We design and build automated workflows with n8n that connect the tools a business already uses (for example forms, spreadsheets, CRMs, email, messaging apps) so data moves and tasks run without manual copy-paste.",TRUE
+whatsapp_automation,"WhatsApp Business automation: automatic replies to common questions, lead capture, appointment confirmations and reminders, and handover to a human when needed, using the official WhatsApp Business platform.",TRUE
+instagram_dm_automation,"Instagram DM automation: an AI assistant that answers incoming direct messages on a professional Instagram account, explains your offer, qualifies prospects, records leads, and hands the conversation to your team when needed. This conversation is an example of it.",TRUE
+ai_customer_support,"AI customer support and virtual receptionists: an AI assistant trained on your business information that answers customer questions, collects requests, and escalates to your team for anything sensitive or complex.",TRUE
+lead_capture,"Lead capture and qualification: automatically collect prospect information from your channels, qualify it, store it in a CRM or spreadsheet, and alert your team about promising leads.",TRUE
+booking,"Appointment and booking workflows: let customers request or book appointments, send confirmations and reminders, and keep your calendar and records updated automatically.",TRUE
+ecommerce,"E-commerce automation: automate order updates, customer questions, abandoned-cart or follow-up messages, and syncing between your shop and other tools.",TRUE
+payment_reminders,"Payment reminders and follow-up systems: automatic, polite reminders for unpaid invoices or pending payments, and scheduled follow-ups with prospects or clients.",TRUE
+pricing,"Every project is custom, so pricing depends on the processes to automate and the tools involved. We do not quote prices in DM. Offer a consultation with the team to understand the need and then provide a proposal.",TRUE
+consultation,The next step for an interested prospect is a consultation with the GostProcess team to discuss their business and what to automate. The prospect can request it here in Instagram DM; a team member then follows up in this conversation to schedule it.,TRUE
+implementation_process,"DRAFT, CONFIRM BEFORE ENABLING: 1) consultation to understand the business and the process; 2) proposal; 3) build and configuration; 4) testing with the client; 5) launch; 6) adjustments and support.",FALSE
+languages,"We can communicate in French, English, and Tunisian Arabic.",TRUE
+faq_small_business,"Q: Do you work with small businesses? A: Yes, automation is useful for businesses of any size; the consultation helps identify what is worth automating first.",TRUE
+faq_tools,"Q: Which tools do you work with? A: We work with n8n, WhatsApp Business, Instagram, Google Sheets, and many other business tools. For a specific tool, the team confirms during the consultation.",TRUE
+faq_human,"Q: Is this a bot? A: Yes, this is GostProcess's AI assistant. A member of the team can take over at any time.",TRUE

@@ -92,6 +92,16 @@ Instagram DM
 
 Deliverables 6–10 (setup guide, test checklist, troubleshooting, costs, deployment) are written alongside steps 3–8, based on what we actually see in your dashboard.
 
-## 5. Information needed from you
+## 5. Decisions (2026-10-13)
 
-See the open questions in the chat. Never paste tokens, passwords, or secrets.
+| Question | Answer / decision |
+|---|---|
+| n8n | Already available. Cloud vs self-hosted not yet confirmed; this affects how the two Meta secrets are stored (setup guide C3) |
+| Instagram account | Personal for now, so it must be switched to Business (setup guide A) |
+| Team alerts | Email (Gmail node) |
+| Pricing | No prices; the bot offers a consultation |
+| AI provider | Anthropic Claude (`claude-opus-5-5`, low effort); switchable to `claude-haiku-5-5` in Config |
+| Conversation memory | Google Sheets **Messages** tab (last 12 messages, 90-day window) plus lead fields |
+| Duplicate protection | n8n workflow static data keyed by Instagram message ID (48h) |
+
+Steps 1–2 of the plan are done: see the README and `npm test`.
