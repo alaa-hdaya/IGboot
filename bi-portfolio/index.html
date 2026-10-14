@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name — BI Portfolio</title>
+  <meta name="description" content="Business Intelligence portfolio: dashboards, SQL analysis, data modeling and business insights.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="logo">YN<span>.</span></a>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="theme-toggle" class="icon-btn" aria-label="Toggle dark mode">◐</button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero container">
+      <p class="eyebrow">Business Intelligence Student</p>
+      <h1>I turn messy data into<br><span class="accent">decisions businesses can act on.</span></h1>
+      <p class="lead">
+        Hi, I'm <strong>Your Name</strong> — a BI student at <strong>Your University</strong>.
+        I build dashboards, write SQL, model data, and explain what the numbers mean.
+      </p>
+      <div class="cta">
+        <a href="#projects" class="btn primary">View projects</a>
+        <a href="assets/cv.pdf" class="btn" download>Download CV</a>
+      </div>
+
+      <div class="stats">
+        <div><strong>5</strong><span>End-to-end projects</span></div>
+        <div><strong>4</strong><span>Industries analysed</span></div>
+        <div><strong>1M+</strong><span>Rows of data modeled</span></div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section container">
+      <h2>About me</h2>
+      <div class="about-grid">
+        <p>
+          I'm studying <strong>Business Intelligence</strong> and I enjoy the full journey from raw data to a
+          clear recommendation. I care about asking the right business question first, then picking the
+          right tool to answer it. I'm currently looking for a <strong>BI / Data Analyst internship</strong>.
+        </p>
+        <ul class="facts">
+          <li><span>📍</span> City, Country</li>
+          <li><span>🎓</span> BSc Business Intelligence — expected 2027</li>
+          <li><span>🏅</span> PL-300 Power BI Data Analyst (in progress)</li>
+          <li><span>🌐</span> English · Arabic</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="section container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="card">
+          <h3>Visualization</h3>
+          <ul class="tags"><li>Power BI</li><li>DAX</li><li>Tableau</li><li>Excel</li></ul>
+        </div>
+        <div class="card">
+          <h3>Data &amp; SQL</h3>
+          <ul class="tags"><li>SQL (CTEs, window functions)</li><li>PostgreSQL</li><li>BigQuery</li></ul>
+        </div>
+        <div class="card">
+          <h3>Modeling &amp; ETL</h3>
+          <ul class="tags"><li>Star schema</li><li>Power Query</li><li>dbt</li></ul>
+        </div>
+        <div class="card">
+          <h3>Programming</h3>
+          <ul class="tags"><li>Python</li><li>pandas</li><li>Jupyter</li><li>Git</li></ul>
+        </div>
+        <div class="card">
+          <h3>Business</h3>
+          <ul class="tags"><li>KPI design</li><li>A/B testing</li><li>Storytelling</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="section container">
+      <h2>Projects</h2>
+      <p class="muted">Each project starts with a business question and ends with a recommendation.</p>
+
+      <div class="filters" role="group" aria-label="Filter projects">
+        <button class="chip active" data-filter="all">All</button>
+        <button class="chip" data-filter="dashboard">Dashboards</button>
+        <button class="chip" data-filter="sql">SQL</button>
+        <button class="chip" data-filter="modeling">Modeling / ETL</button>
+        <button class="chip" data-filter="python">Python</button>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <article class="project" data-tags="dashboard">
+          <div class="thumb" style="--hue: 210">📊</div>
+          <div class="project-body">
+            <p class="industry">Retail</p>
+            <h3>Sales Performance Dashboard</h3>
+            <p class="question"><strong>Question:</strong> Why did Q3 revenue drop 12%, and where?</p>
+            <p class="insight"><strong>Key insight:</strong> 70% of the drop came from 2 product lines in the West region after a price change.</p>
+            <ul class="tags small"><li>Power BI</li><li>DAX</li><li>Power Query</li></ul>
+            <div class="links">
+              <a href="#">Live dashboard ↗</a>
+              <a href="projects/project-template.md">Case study</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project" data-tags="sql">
+          <div class="thumb" style="--hue: 160">🗄️</div>
+          <div class="project-body">
+            <p class="industry">E-commerce</p>
+            <h3>Customer Churn &amp; Cohort Retention</h3>
+            <p class="question"><strong>Question:</strong> Which customers stop buying, and when?</p>
+            <p class="insight"><strong>Key insight:</strong> Retention falls sharply after month 2; first-order discount users churn 1.8× faster.</p>
+            <ul class="tags small"><li>PostgreSQL</li><li>Window functions</li><li>CTEs</li></ul>
+            <div class="links">
+              <a href="#">GitHub ↗</a>
+              <a href="projects/project-template.md">Case study</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project" data-tags="modeling dashboard">
+          <div class="thumb" style="--hue: 280">🧱</div>
+          <div class="project-body">
+            <p class="industry">Logistics</p>
+            <h3>End-to-End Delivery Delay Analysis</h3>
+            <p class="question"><strong>Question:</strong> Why are 18% of deliveries late?</p>
+            <p class="insight"><strong>Key insight:</strong> Late deliveries cluster on 3 carriers and Monday dispatches — 3 recommendations proposed.</p>
+            <ul class="tags small"><li>dbt</li><li>Star schema</li><li>Tableau</li></ul>
+            <div class="links">
+              <a href="#">GitHub ↗</a>
+              <a href="#">Live dashboard ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project" data-tags="python">
+          <div class="thumb" style="--hue: 30">🐍</div>
+          <div class="project-body">
+            <p class="industry">Marketing</p>
+            <h3>A/B Test: Landing Page Conversion</h3>
+            <p class="question"><strong>Question:</strong> Should we ship the new landing page?</p>
+            <p class="insight"><strong>Key insight:</strong> +2.1 pp conversion, statistically significant (p &lt; 0.05) — recommended rollout.</p>
+            <ul class="tags small"><li>Python</li><li>pandas</li><li>SciPy</li></ul>
+            <div class="links">
+              <a href="#">Notebook ↗</a>
+              <a href="projects/project-template.md">Case study</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 5 -->
+        <article class="project" data-tags="dashboard sql">
+          <div class="thumb" style="--hue: 340">👥</div>
+          <div class="project-body">
+            <p class="industry">HR</p>
+            <h3>Employee Attrition Dashboard</h3>
+            <p class="question"><strong>Question:</strong> Which teams are losing people, and why?</p>
+            <p class="insight"><strong>Key insight:</strong> Attrition is 2× higher for employees without a promotion in 3+ years.</p>
+            <ul class="tags small"><li>SQL</li><li>Power BI</li><li>Excel</li></ul>
+            <div class="links">
+              <a href="#">Live dashboard ↗</a>
+              <a href="#">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section container contact">
+      <h2>Let's talk</h2>
+      <p class="lead">Open to BI / Data Analyst internships and junior roles.</p>
+      <div class="cta">
+        <a href="mailto:you@example.com" class="btn primary">you@example.com</a>
+        <a href="https://www.linkedin.com/in/your-profile" class="btn" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/your-username" class="btn" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">© <span id="year"></span> Your Name · Built with HTML &amp; CSS</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
