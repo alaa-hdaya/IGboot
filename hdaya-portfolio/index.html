@@ -6,54 +6,105 @@
   <title>Alaa Hdaya | Business Intelligence Portfolio</title>
   <meta name="description" content="Alaa Hdaya — Business Intelligence student. Dashboards, SQL analysis, data modeling and business insights.">
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- NAV -->
   <header class="nav">
-    <a href="#home" class="logo">Alaa<span>.</span></a>
-    <nav>
+    <a href="#home" class="logo">Alaa<sup>®</sup></a>
+    <nav class="nav-pill">
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
+      <a href="#projects" class="active">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
+    <a href="#contact" class="btn dark small">Hire me <span>↗</span></a>
   </header>
 
   <!-- HERO -->
   <section class="hero" id="home">
-    <div class="hero-left">
-      <p class="kicker">BUSINESS INTELLIGENCE STUDENT</p>
+    <h1 class="headline">
+      Turning raw data<br>
+      <em>into clearer decisions.</em>
+    </h1>
 
-      <h1 class="headline">I’m <span>Alaa.</span></h1>
+    <p class="lead">
+      I’m Alaa, a Business Intelligence student. I build dashboards, write SQL
+      and turn numbers into insights a business can act on.
+    </p>
 
-      <p class="desc">
-        I turn raw data into dashboards and insights that help businesses make better decisions.
-        I work across the full journey: SQL, data modeling, visualization, and a clear recommendation at the end.
-      </p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn dark">View my projects <span>→</span></a>
+      <!-- TODO: add your CV as cv.pdf in this folder -->
+      <a href="cv.pdf" class="btn plain" download><span class="play">↓</span> Download CV</a>
+    </div>
 
-      <p class="skills">SQL · Power BI · Excel · Python · Data Modeling</p>
+    <!-- Rotating badge -->
+    <div class="badge" aria-hidden="true">
+      <svg viewBox="0 0 100 100">
+        <defs><path id="circle" d="M50,50 m-38,0 a38,38 0 1,1 76,0 a38,38 0 1,1 -76,0"/></defs>
+        <text><textPath href="#circle">BUSINESS INTELLIGENCE • DATA • INSIGHT • </textPath></text>
+      </svg>
+      <span class="spark">✦</span>
+    </div>
 
-      <div class="hero-actions soft-style">
-        <a href="#projects" class="soft-btn primary">View My Projects</a>
-        <!-- TODO: add your CV as cv.pdf in this folder -->
-        <a href="cv.pdf" class="soft-btn secondary" download>Download CV</a>
-        <a href="#contact" class="soft-btn secondary">Contact</a>
+    <!-- Side cards -->
+    <div class="side-card left glass">
+      <span class="icon-dot">✦</span>
+      <h4>Turn data<br>into progress.</h4>
+      <p>Clean it, model it,<br>explain it.</p>
+    </div>
+
+    <div class="side-card right glass">
+      <span class="status"><i></i> Available</span>
+      <h4>Open to BI<br>internships.</h4>
+      <p>Let’s build something<br>useful with data.</p>
+    </div>
+
+    <!-- Stage: photo + floating chips -->
+    <div class="stage">
+      <svg class="orbit" viewBox="0 0 1000 400" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M60,40 C180,300 380,360 500,360 C620,360 820,300 940,40" />
+      </svg>
+
+      <div class="portrait">
+        <img src="portrait.jpg" alt="Portrait of Alaa Hdaya">
+      </div>
+
+      <div class="chip glass c1">
+        <span class="chip-icon" style="--c:#c9e7a0">▦</span>
+        <div><strong>SQL</strong><small>Query &amp; explore</small></div>
+      </div>
+      <div class="chip glass c2">
+        <span class="chip-icon" style="--c:#cfc6f5">◔</span>
+        <div><strong>Power BI</strong><small>Dashboards &amp; DAX</small></div>
+      </div>
+      <div class="chip glass c3">
+        <span class="chip-icon" style="--c:#f7c9a8">✎</span>
+        <div><strong>Insight</strong><small>Ask the right why</small></div>
+      </div>
+      <div class="chip glass c4 mini-chart" aria-hidden="true">
+        <i style="--h:40%"></i><i style="--h:65%"></i><i style="--h:50%"></i><i style="--h:85%"></i><i style="--h:70%"></i>
       </div>
     </div>
 
-    <div class="hero-right">
-      <div class="photo-frame">
-        <img class="profile-pic" src="portrait.jpg" alt="Portrait of Alaa Hdaya">
-      </div>
+    <div class="hero-foot left">
+      <p>SQL · Power BI · Excel<br>Python · Data Modeling</p>
+    </div>
+    <div class="hero-foot right">
+      <span class="spark small">✦</span>
+      <p>Less noise.<br><em>More insight.</em></p>
     </div>
   </section>
 
   <!-- ABOUT -->
-  <section class="section about" id="about">
-    <h3 class="section-title">About</h3>
+  <section class="section" id="about">
+    <p class="eyebrow">About</p>
+    <h2 class="section-title">A student who asks <em>why</em> before <em>how.</em></h2>
     <div class="about-grid">
       <p>
         I’m a Business Intelligence student who enjoys asking the right business question first,
@@ -62,7 +113,7 @@
         <strong>BI / Data Analyst internship</strong>.
       </p>
       <!-- TODO: fill in your real details -->
-      <ul class="facts">
+      <ul class="facts glass">
         <li><span>Studying</span> Business Intelligence — [University], [year]</li>
         <li><span>Based in</span> [City, Country]</li>
         <li><span>Languages</span> [Arabic · French · English]</li>
@@ -73,21 +124,26 @@
 
   <!-- SKILLS -->
   <section class="section" id="skills">
-    <h3 class="section-title">Skills</h3>
+    <p class="eyebrow">Skills</p>
+    <h2 class="section-title">The tools behind <em>the insight.</em></h2>
     <div class="skills-grid">
-      <div class="skill-card">
+      <div class="card glass">
+        <span class="chip-icon" style="--c:#c9e7a0">▦</span>
         <h5>Data &amp; SQL</h5>
         <ul class="tags"><li>SQL</li><li>Joins &amp; CTEs</li><li>Window functions</li></ul>
       </div>
-      <div class="skill-card">
+      <div class="card glass">
+        <span class="chip-icon" style="--c:#cfc6f5">◔</span>
         <h5>Visualization</h5>
         <ul class="tags"><li>Power BI</li><li>DAX</li><li>Excel</li></ul>
       </div>
-      <div class="skill-card">
+      <div class="card glass">
+        <span class="chip-icon" style="--c:#bfe0f2">⬡</span>
         <h5>Modeling &amp; ETL</h5>
         <ul class="tags"><li>Star schema</li><li>Power Query</li><li>Data cleaning</li></ul>
       </div>
-      <div class="skill-card">
+      <div class="card glass">
+        <span class="chip-icon" style="--c:#f7c9a8">{ }</span>
         <h5>Programming</h5>
         <ul class="tags"><li>Python</li><li>Java</li><li>HTML · CSS · JS</li><li>Git</li></ul>
       </div>
@@ -95,13 +151,13 @@
   </section>
 
   <!-- PROJECTS -->
-  <section class="section projects" id="projects">
-    <h3 class="section-title">BI Projects</h3>
-    <p class="section-sub">Each project starts with a business question and ends with a recommendation.</p>
+  <section class="section" id="projects">
+    <p class="eyebrow">Projects</p>
+    <h2 class="section-title">From a question <em>to a decision.</em></h2>
 
     <!--
       HOW TO ADD A BI PROJECT
-      Copy one <div class="project"> block and fill in:
+      Copy one <article class="project"> block and fill in:
       - Question: the business question you answered
       - Insight: your main finding, WITH a number
       - Tags: the tools you used
@@ -109,107 +165,102 @@
       Remove the "draft" class once the project is real; drafts are hidden on the live site.
     -->
 
-    <div class="project">
-      <div class="project-info">
+    <div class="project-list">
+      <article class="project glass">
         <span class="number">01</span>
-        <div>
-          <h4>Coin Guard – Personal Finance Dashboard</h4>
+        <div class="project-body">
+          <h4>Coin Guard — Personal Finance Dashboard</h4>
           <p>
             A personal finance dashboard that tracks income, expenses and balance.
             I defined the core KPIs (total income, total expenses, net balance, spending by category)
             and designed the visuals so a user can see where their money goes at a glance.
           </p>
-          <ul class="tags small"><li>KPI design</li><li>JavaScript</li><li>Data visualization</li></ul>
+          <ul class="tags"><li>KPI design</li><li>JavaScript</li><li>Data visualization</li></ul>
         </div>
-      </div>
-      <div class="project-links">
-        <a href="https://xxx596.github.io/coin-guard/" target="_blank" rel="noopener" class="circle-btn">Live →</a>
-      </div>
-    </div>
+        <div class="project-links">
+          <a href="https://xxx596.github.io/coin-guard/" target="_blank" rel="noopener" class="btn dark small">Live <span>↗</span></a>
+        </div>
+      </article>
 
-    <!-- DRAFT: Power BI project (hidden until you remove class "draft") -->
-    <div class="project draft">
-      <div class="project-info">
+      <!-- DRAFT: Power BI project (hidden until you remove class "draft") -->
+      <article class="project glass draft">
         <span class="number">02</span>
-        <div>
+        <div class="project-body">
           <h4>[Sales Performance Dashboard]</h4>
           <p>
             <strong>Question:</strong> [Why did revenue drop last quarter, and where?]<br>
             <strong>Insight:</strong> [Your main finding with a number]
           </p>
-          <ul class="tags small"><li>Power BI</li><li>DAX</li><li>Power Query</li></ul>
+          <ul class="tags"><li>Power BI</li><li>DAX</li><li>Power Query</li></ul>
         </div>
-      </div>
-      <div class="project-links">
-        <a href="#" target="_blank" rel="noopener" class="circle-btn">Live →</a>
-        <a href="#" target="_blank" rel="noopener" class="circle-btn ghost">Code</a>
-      </div>
-    </div>
+        <div class="project-links">
+          <a href="#" target="_blank" rel="noopener" class="btn dark small">Live <span>↗</span></a>
+          <a href="#" target="_blank" rel="noopener" class="btn plain small">Code</a>
+        </div>
+      </article>
 
-    <!-- DRAFT: SQL project (hidden until you remove class "draft") -->
-    <div class="project draft">
-      <div class="project-info">
+      <!-- DRAFT: SQL project (hidden until you remove class "draft") -->
+      <article class="project glass draft">
         <span class="number">03</span>
-        <div>
-          <h4>[Customer Churn Analysis – SQL]</h4>
+        <div class="project-body">
+          <h4>[Customer Churn Analysis — SQL]</h4>
           <p>
             <strong>Question:</strong> [Which customers stop buying, and when?]<br>
             <strong>Insight:</strong> [Your main finding with a number]
           </p>
-          <ul class="tags small"><li>SQL</li><li>CTEs</li><li>Window functions</li></ul>
+          <ul class="tags"><li>SQL</li><li>CTEs</li><li>Window functions</li></ul>
         </div>
-      </div>
-      <div class="project-links">
-        <a href="#" target="_blank" rel="noopener" class="circle-btn">Code →</a>
-      </div>
+        <div class="project-links">
+          <a href="#" target="_blank" rel="noopener" class="btn dark small">Code <span>↗</span></a>
+        </div>
+      </article>
     </div>
 
-    <h3 class="section-title secondary-title">Other Projects</h3>
+    <h3 class="sub-title">Other <em>projects</em></h3>
 
-    <div class="project">
-      <div class="project-info">
-        <span class="number">—</span>
-        <div>
-          <h4>PetMatch – Mobile App</h4>
+    <div class="project-list">
+      <article class="project glass">
+        <span class="number">✦</span>
+        <div class="project-body">
+          <h4>PetMatch — Mobile App</h4>
           <p>
             An academic mobile app that matches pets for socialization or responsible breeding,
             based on breed, age, behavior and location.
           </p>
-          <ul class="tags small"><li>Mobile app</li><li>Matching logic</li><li>UI design</li></ul>
+          <ul class="tags"><li>Mobile app</li><li>Matching logic</li><li>UI design</li></ul>
         </div>
-      </div>
-      <div class="project-links">
-        <a href="https://den-date-app.lovable.app/" target="_blank" rel="noopener" class="circle-btn">Live →</a>
-      </div>
-    </div>
+        <div class="project-links">
+          <a href="https://den-date-app.lovable.app/" target="_blank" rel="noopener" class="btn plain small">Live <span>↗</span></a>
+        </div>
+      </article>
 
-    <div class="project">
-      <div class="project-info">
-        <span class="number">—</span>
-        <div>
-          <h4>Currency Converter – Java Swing</h4>
+      <article class="project glass">
+        <span class="number">✦</span>
+        <div class="project-body">
+          <h4>Currency Converter — Java Swing</h4>
           <p>
             A desktop app that converts amounts between TND, EUR and USD, with a clean graphical
             interface, input validation and a modular Java structure.
           </p>
-          <ul class="tags small"><li>Java</li><li>Swing</li><li>Eclipse</li></ul>
+          <ul class="tags"><li>Java</li><li>Swing</li><li>Eclipse</li></ul>
         </div>
-      </div>
-      <div class="project-links">
-        <a href="https://github.com/xxx596/Currency-Converter" target="_blank" rel="noopener" class="circle-btn">Code →</a>
-      </div>
+        <div class="project-links">
+          <a href="https://github.com/xxx596/Currency-Converter" target="_blank" rel="noopener" class="btn plain small">Code <span>↗</span></a>
+        </div>
+      </article>
     </div>
   </section>
 
   <!-- CONTACT -->
   <section class="section contact" id="contact">
-    <h3 class="section-title">Let’s talk</h3>
-    <p class="section-sub">Open to BI / Data Analyst internships and student projects.</p>
-    <div class="hero-actions soft-style center">
+    <span class="spark">✦</span>
+    <h2 class="section-title">Let’s turn your data<br><em>into answers.</em></h2>
+    <p class="lead">Open to BI / Data Analyst internships and student projects.</p>
+    <div class="hero-actions">
       <!-- TODO: replace with your real email -->
-      <a href="mailto:your.email@example.com" class="soft-btn primary">Email me</a>
-      <a href="https://www.linkedin.com/in/alaa-hdaya-29354633b/" target="_blank" rel="noopener" class="soft-btn secondary">LinkedIn</a>
-      <a href="https://github.com/xxx596" target="_blank" rel="noopener" class="soft-btn secondary">GitHub</a>
+      <a href="mailto:your.email@example.com" class="btn dark">Email me <span>→</span></a>
+      <a href="https://www.linkedin.com/in/alaa-hdaya-29354633b/" target="_blank" rel="noopener" class="btn plain">LinkedIn</a>
+      <a href="https://github.com/xxx596" target="_blank" rel="noopener" class="btn plain">GitHub</a>
     </div>
   </section>
 
