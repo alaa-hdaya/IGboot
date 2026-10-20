@@ -539,3 +539,13 @@ em{ font-style:italic; font-family:var(--serif); }
   .project{ grid-template-columns:1fr; padding:22px; gap:12px; }
   .number{ font-size:26px; }
 }
+
+/* Placeholder card for upcoming projects */
+.project.upcoming{
+  background:transparent;
+  border:1px dashed #cfcfca;
+  box-shadow:none;
+  backdrop-filter:none;
+  -webkit-backdrop-filter:none;
+}
+.project.upcoming h4 em{ font-weight:400; font-size:21px; }
