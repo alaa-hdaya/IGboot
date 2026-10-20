@@ -1,17 +1,14 @@
-# Alaa Hdaya — Portfolio (BI redesign)
+# Alaa Hdaya — Portfolio
 
-Updated version of https://github.com/xxx596/Hdaya-PORTFOLIO, same design, now focused on Business Intelligence.
+BI-focused portfolio site: `index.html`, `style.css`, `portrait.jpg`, `cv.pdf`.
 
-## Put it on your live site
-Copy `index.html`, `style.css` (and `portrait.jpg`, unchanged) into your `Hdaya-PORTFOLIO` repo, commit and push.
-GitHub Pages updates in about a minute.
+## Publish
+Copy all four files into your GitHub Pages repo, commit and push.
 
-## Before publishing, fill in
-- [ ] `index.html` → About: university, year, city, languages, certification (the `[ ... ]` parts)
-- [ ] `index.html` → Contact: replace `your.email@example.com`
-- [ ] Add `cv.pdf` next to `index.html` (the "Download CV" button points to it)
-- [ ] Check the Coin Guard description matches what the app really does (KPIs, categories)
+## Add a BI project later
+Two hidden project templates (Power BI and SQL) are in `index.html` with the `draft` class.
+Fill in the question, insight (with a number), tools and links, then remove `draft`.
+Delete the dashed "BI case studies — in progress" card once your first BI project is live.
 
-## Add your BI projects
-Two draft project cards (Power BI and SQL) are already in `index.html`, hidden with the `draft` class.
-When a project is done: fill in the question, insight (with a number), tools and links, then remove `draft`.
+## Update the CV
+Replace `cv.pdf` with the new version (same file name).
